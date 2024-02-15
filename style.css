@@ -37,6 +37,7 @@ html,body{
 body{
     overflow-x: hidden;
     cursor: none;
+    background-color: white;
 }
 
 #cursor{
@@ -60,6 +61,13 @@ nav{
     position: fixed;
     mix-blend-mode: difference;
     z-index: 9;
+    color: white;
+}
+
+nav i{
+    font-size: 30px;
+    display: none;
+    color: white;
 }
 
 .right_nav{
@@ -82,7 +90,7 @@ nav{
     position: relative;
 }
 
-video{
+#page1 video{
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -101,7 +109,7 @@ video{
     /* padding: 1px; */
 }
 
-#page2 h3{
+h3{
     font-size: 1.5vw;
     /* color:#222222; */
     font-weight: 300;
@@ -124,7 +132,33 @@ video{
     /* background-color: antiquewhite; */
 }
 
-.page2_right{
+.page2_left_content{
+    width:70%;
+    height: 100%;
+    background-color: #F8F8F8;
+    background-repeat: no-repeat; 
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s linear all;
+}
+
+.page2_left_content img{
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-88%,-50%);
+}
+
+.page2_blur{
+    width: 50%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.206);
+    backdrop-filter: blur(20px);
+}
+
+.page2_right,.page3_left{
     width: 50%;
     height: 100%;
     /* background-color: aquamarine; */
@@ -135,19 +169,19 @@ video{
     align-items: start;
 }
 
-.page2_right h2{
+#page2 h2,#page3 h2{
     font-size: 3vw;
     font-weight: 400;
 }
 
-.page2_right p{
+#page2 p,#page3 p{
     font-size: 22.5px;
     font-family: Plight;
     letter-spacing: 1px;
     line-height: 28px;
 }
 
-.page2_right button{
+button{
     font-family: Pregular;
     color: #222222;
     font-size: 18px;
@@ -155,4 +189,52 @@ video{
     background-color: transparent;
     border-radius: 40px;
     letter-spacing: 1px;
+}
+
+#page3{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+.page3_left{
+    padding: 0 0 0 5vw;
+}
+
+#page3 video{
+    width: 35%;
+    height: 50vh;
+    margin-left: 10vw;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page4{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8vw;
+    padding-bottom: 30vw;
+    position: relative;
+}
+
+#page4 h3{
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page4_top{
+    width: 100%;
+    height: 130px;
+    margin-top: -1px;
+}
+
+.helmet{
+    width: 100%;
 }
