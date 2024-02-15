@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="cursor"></div>
     <nav id="nav">
-        <img src="https://www.brain.space/wp-content/themes/brain.space/assets/imgs/logo/logo-white_brain.space.svg" alt="">
+        <img class="hover" src="https://www.brain.space/wp-content/themes/brain.space/assets/imgs/logo/logo-white_brain.space.svg" alt="">
         <div class="right_nav">
-            <h4>Home</h4>
-            <h4>Technology</h4>
-            <h4>Solutions</h4>
-            <h4>About</h4>
-            <h4>Space Mission</h4>
-            <h4>Contact us</h4>
+            <h4 class="hover">Home</h4>
+            <h4 class="hover">Technology</h4>
+            <h4 class="hover">Solutions</h4>
+            <h4 class="hover">About</h4>
+            <h4 class="hover">Space Mission</h4>
+            <h4 class="hover">Contact us</h4>
         </div>
     </nav>
     
@@ -24,10 +25,21 @@
         <div id="page1">
             <video src="https://www.brain.space/wp-content/uploads/2023/07/BRAIN.SPACE-HERO-SHORT-LR_1.webm"></video>
         </div>
-        <div id="page2"></div>
+        <div id="page2">
+            <h3>THE BRAIN DATA COMPANY</h3>
+            <div class="page2_content">
+                <div class="page2_left"></div>
+                <div class="page2_right">
+                    <h2>Creating a new breed of Human AI</h2>
+                    <p>We have designed Brain Data collection and analysis tools to incorporate the Human element into AI-based technologies. <br>
+                        This new breed of Human AI presents opportunities for innovation across industries and designs solutions based on the human mind.</p>
+                    <button>Explore our solutions</button>
+                </div>
+            </div>  
+        </div>
     </div>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="./script.js"></script>
