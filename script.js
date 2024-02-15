@@ -234,3 +234,97 @@ function page3TextAnimation(){
     })
 }
 page3TextAnimation()
+
+function page4TextAnimation(){
+    
+var tl2 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".page4_text h2",
+        scroller:"#main",
+        // markers:true,
+        // start:"top 90%",
+        end:"top 20%",
+        scrub:true
+    }
+})
+
+tl2.from(".page4_text h2",{
+    transform:"translate(0%,15%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0
+})
+
+tl2.from(".page4_text p",{
+    transform:"translate(0%,40%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0
+})
+
+tl2.from(".page4_text button",{
+    transform:"translate(0%,40%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0
+})
+}
+page4TextAnimation()
+
+
+gsap.from(".page4_content1",{
+    transform:"translate(0%,20%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0,
+    scrollTrigger:{
+        trigger:".page4_content1",
+        scroller:"#main",
+        start:"top 80%",
+        end:"top 20%",
+        scrub:true
+    }
+})
+
+gsap.from(".page4_content2",{
+    transform:"translate(0%,20%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0,
+    scrollTrigger:{
+        trigger:".page4_content2",
+        scroller:"#main",
+        start:"top 80%",
+        end:"top 20%",
+        scrub:true
+    }
+})
+
+gsap.from(".page4_content3",{
+    transform:"translate(0%,20%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0,
+    scrollTrigger:{
+        trigger:".page4_content3",
+        scroller:"#main",
+        start:"top 80%",
+        end:"top 20%",
+        scrub:true
+    }
+})
+
+gsap.from(".page4_content4",{
+    transform:"translate(0%,20%)",
+    duration:2,
+    scale:1.1,  
+    opacity:0,
+    scrollTrigger:{
+        trigger:".page4_content4",
+        scroller:"#main",
+        start:"top 80%",
+        end:"top 20%",
+        scrub:true
+    }
+})
+

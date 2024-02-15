@@ -169,13 +169,13 @@ h3{
     align-items: start;
 }
 
-#page2 h2,#page3 h2{
+ h2{
     font-size: 3vw;
     font-weight: 400;
 }
 
-#page2 p,#page3 p{
-    font-size: 22.5px;
+p{
+    font-size: 1.4vw;
     font-family: Plight;
     letter-spacing: 1px;
     line-height: 28px;
@@ -218,7 +218,7 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 8vw;
-    padding-bottom: 30vw;
+    padding-bottom: 15vw;
     position: relative;
 }
 
@@ -237,4 +237,56 @@ button{
 
 .helmet{
     width: 100%;
+}
+
+.page4_text{
+    width: 45vw;
+    height:44vh ;
+    /* background-color: red; */
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page4_content{
+    width: 85%;
+    height: 40vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 18vh auto 0 auto;
+}
+
+.page4_video{
+    width: 35%;
+    height: 100%;
+}
+
+.page4_video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page4_data{
+    width:50%;
+    height: 100%;
+}
+
+.page4_data button{
+    margin-top: 5vh;
+}
+
+.page4_data p{
+    font-size: 1.8vw;
+    font-family: Aregular;
+    line-height: 2.2vw;
+}
+span{
+    font-weight: 900;
 }
