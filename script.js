@@ -110,6 +110,24 @@ function navHover(){
 }
 navHover()
 
+function page1Heading(){
+    var text = "We are brain.space The brain data company"
+    var splittedText = text.split("")
+
+    var clutter=""
+    splittedText.forEach(function(elem){
+        clutter += `<span>${elem}</span>`
+    })
+    var h1Text = document.querySelector('#page1 h1')
+    h1Text.innerHTML = clutter;
+    gsap.to("#page1 h1 span",{
+        display:"initial",
+        stagger:0.1
+    })
+
+}
+page1Heading()
+
 function page2ImageAnimation(){
     var tl = gsap.timeline({repeat:-1})
 
@@ -271,7 +289,8 @@ tl2.from(".page4_text button",{
 }
 page4TextAnimation()
 
-
+function page4ContentAnimation(){
+    
 gsap.from(".page4_content1",{
     transform:"translate(0%,20%)",
     duration:2,
@@ -328,3 +347,86 @@ gsap.from(".page4_content4",{
     }
 })
 
+
+}
+page4ContentAnimation()
+
+function page5ScrollAnimation(){
+    
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#page5",
+        scroller:"#main",
+        scrub:2,
+        start:"top -15%",
+        end:"bottom 0",
+        pin:true
+    }
+})
+tl.to(".page5_content",{
+    transform:"translate(-80%)",
+    duration:10,
+    delay:1
+    
+},scroll)
+
+tl.to('.inline',{
+    x:691,
+    duration:10,
+    delay:1
+},scroll)
+}
+page5ScrollAnimation()
+
+function page5Anime(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page5_content1 h2",
+            scroller:"#main",
+            scrub:true,
+            markers:true,
+            // start:"top 70%"
+            end:"top 10%"
+        }
+    })
+
+    tl.from(".page5_content1 h2",{
+        transform:"translate(0%,40%)",
+        opacity:0
+    })
+    
+    tl.from(".page5_content1 p",{
+        transform:"translate(0, 40%)",
+        opacity:0
+    })
+    tl.from(".page5_content1 button",{
+        transform:"translate(0% ,40%)",
+        opacity:0
+    })
+
+    var tl2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page5_content1 h2",
+            scroller:"#main",
+            scrub:true,
+            markers:true,
+            // start:"top 70%"
+            end:"top 10%"
+        }
+    })
+
+    tl2.from(".page5_elems img",{
+        transform:"translate(0% ,40%)",
+        opacity:0
+    })
+    tl2.from(".page5_elems h2",{
+        transform:"translate(0% ,40%)",
+        opacity:0
+    })
+
+    tl2.from(".page5_elems p",{
+        transform:"translate(0% ,40%)",
+        opacity:0
+    })
+}
+page5Anime()
