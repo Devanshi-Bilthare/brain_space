@@ -488,8 +488,386 @@ span{
     margin-top: 2vh;
 }
 
+#page6 h3{
+    text-align: left;
+    margin-top: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-family: Asemibold;
+}
+
 .page6_bot{
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
 }
 
+.page6_bot_cont{
+    width: 28vw;
+    height: 80vh;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.cnt{
+    position: absolute;
+    font-size: 2.5vw;
+    top: 3vh;
+    right: 1vw;
+    font-weight: 900;
+}
+
+.page6_bot button{
+    max-width: 18vw;
+    margin: 10vh 4vw 0 4vw;
+    font-size: 2vw;
+    font-family: Aregular;
+    text-align: start;
+    padding: 2vw;
+    border: none;
+}
+
+.page6_btn1{
+    background-color: #E0DEFE;
+}
+
+.page6_btn2{
+    background-color: #C9E3F8;
+}
+
+.page6_btn3{
+    background-color: #FED7CD;
+}
+
+.page6_bot p{
+    margin: 5vh 4vw;
+    font-size: 1.2vw;
+    font-family: Aregular;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #7f7f7f;
+}
+
+#page6>p{
+    text-align: center;
+    font-family: Aregular;
+    font-size: 1.5vw;
+    width: 50vw;
+    margin:-10vh auto;
+}
+
+#page6>button{
+    margin: 20vh 0 10vh 0;
+}
+
+.page6_img{
+    margin:0 25vw -.6vh 23vw;
+    width: 40vw;
+}
+
+#page7{
+    width: 100%;
+    min-height: 100vh;
+    padding:0 7vw ;
+}
+
+#page7 h3{
+    margin-top: 15vh;
+}
+
+.page7_top{
+    width: 86vw;
+    height: 35vh;
+    display: flex;
+    margin-top: 16vh;  
+
+}
+
+.page7_top_left{
+    width: 50%;
+    height: 100%; 
+    padding-right: 5vw;
+}
+
+.page7_top_left p{
+    font-size: 1.6vw;
+    margin-top: 5vh;
+}
+
+.page7_top_right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://www.brain.space/wp-content/uploads/2023/07/DASHBOARD.jpg);
+    border-radius: 20px;
+}
+
+.page7_bot1,.page7_bot2{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 15vh;
+}
+
+.page7_bot_info{
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page7_bot_info img{
+    height: 60px;
+}
+
+.page7_bot_info p{
+    font-size: .8vw;
+    font-weight: 500;
+    font-family: Alight;
+    line-height: 1.2vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+
+#page7>button{
+    margin: 15vh 0 10vh 0;
+}
+
+
+#page8{
+    width: 94%;
+    margin: auto;
+    min-height: 100vh;
+    border-top-left-radius: 100px;
+    padding-bottom: 50vh;
+    position: relative;
+    background:conic-gradient(at 0 0 , #FFC3BE 0deg, #CED2FB 39.19deg, #C5E3FF 95.62deg, #BEEFF8 150.61deg, #B7F9F0 208.13deg, #F7FFC7 253.13deg, #FFE7D2 300deg, #FFD6CE 328.25deg, #FFC3BE 360deg), conic-gradient(from 176.66deg at 46.1% 33.87%, #E7E2F0 0deg, #95BFE8 39.19deg, #A3DEFF 104.7deg, #77A8F4 150.61deg, #6C89F0 210.89deg, #DAD4D4 272.3deg, #FFBBB4 314.64deg, #EFD4DB 328.25deg, #E7E2F0 360deg);
+}
+
+.page8_header_bg{
+    width: 16vw;
+    height: 16vw;
+    /* background-color: red; */
+    background-image: url(	https://www.brain.space/wp-content/themes/brain.space/assets/substracts/shape_corner_substract.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page8_circle{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/imgs/side-shape-icons/hp_intro_side_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page8_header h3{
+    margin-top: -20vh;
+}
+
+.page8_top{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+}
+
+.page8_top h2{
+    width: 35vw;
+    /* background-color: yellow; */
+}
+
+.page8_top_right{
+    width: 40vw;
+}
+
+.page8_top_right h3{
+    margin-top: 0;
+    text-align: start;
+    letter-spacing: 0px;
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.page8_top_right p{
+    margin-top: 5vh;
+}
+
+.page8_center{
+    width:85vw;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.36);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    padding: 1px 0 10vh 0;
+    border-radius: 50px;
+}
+
+.page8_center p{
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.icons_contain{
+    width: 70vw;
+    display: flex;
+    /* align-items: center; */
+    margin: auto;
+    /* margin-top: 15vh; */
+    /* background-color: red; */
+}
+
+.icons_in{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    padding-left:5vw;
+    position: relative;
+}
+
+.icons_in::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.24);
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+.last::after{
+    content:"";
+    height: 0;
+}
+
+.circle {
+    width: 8vh;
+    height: 8vh;
+    /* height: 0; */
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+    position: relative;
+   border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icons_in h4{
+    margin-left: 3vw;
+    font-weight: 200;
+  }
+
+  .page8_bot{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+}
+
+.page8_bot_left{
+    width: 35vw;
+    height: 100%;
+    /* background-color: red; */
+}
+.page8_bot p{
+    margin: 5vh 0;
+}
+
+.page8_bot h4{
+    padding: 3vh 0;
+    border-top: .5px solid rgb(34, 34, 34);
+    font-weight: 500;
+    font-size: .8vw;
+}
+
+.page8_bot_right{
+    width: 40vw;
+    height: 100%;
+    background-image: url('https://www.brain.space/wp-content/uploads/2023/07/peripheral-sensors.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#page9{
+    width:96%;
+    height: 125vh;
+    margin: auto;
+    background: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission_bg.jpg) no-repeat center;
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission-box_bg.jpg.svg);
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    margin-top: -25vh;
+    position: relative;
+    padding: 1px 4.5vw;
+}
+
+.page9_imgs{
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+}
+
+.page9_imgs img{
+    height: 13vh;
+}
+
+.page9_cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.page9_left{
+    width: 35vw;
+}
+
+.page9_left p{
+    margin: 7vh 0;
+}
+
+.page9_left h5{
+    font-size: 1.7vw;
+    font-family: Plight;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.page9_right{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 200px;
+}
+
+.page9_right video{
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page10{
+    width: 100%;
+    min-height: 100vh;
+}

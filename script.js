@@ -366,8 +366,7 @@ var tl = gsap.timeline({
 tl.to(".page5_content",{
     transform:"translate(-80%)",
     duration:10,
-    delay:1
-    
+    delay:1  
 },scroll)
 
 tl.to('.inline',{
@@ -384,7 +383,7 @@ function page5Anime(){
             trigger:".page5_content1 h2",
             scroller:"#main",
             scrub:true,
-            markers:true,
+            // markers:true,
             // start:"top 70%"
             end:"top 10%"
         }
@@ -409,7 +408,7 @@ function page5Anime(){
             trigger:".page5_content1 h2",
             scroller:"#main",
             scrub:true,
-            markers:true,
+            // markers:true,
             // start:"top 70%"
             end:"top 10%"
         }
@@ -430,3 +429,124 @@ function page5Anime(){
     })
 }
 page5Anime()
+
+function page6TopAnime(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:"#page6 h2",
+            scroller:"#main",
+            // markers:true,
+            end:"top 30%",
+            start:"top 90%",
+            scrub:true
+        }
+    })
+
+    tl.from("#page6 h2",{
+        transform:"scale(1.1) translateY(10vh)",
+        opacity:0
+    })
+
+    tl.from(".page6_top",{
+        transform:"scale(1.1) translateY(2vh)",
+        opacity:0
+    })
+
+    var tl2 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page6_bot_cont",
+            scroller:"#main",
+            scrub:true,
+            start:"top 90%",
+            end:"top -50%",
+            // markers:true
+        }
+    })
+    tl2.from(".page6_bot_cont",{
+        transform:"scale(1.5, 1.2) ",
+        opacity:0.1,    
+    }, "kuch")
+
+    tl2.from(".page6_bot_cont button",{
+        transform:"scale(1.1) translateY(10vh)",
+        opacity:0
+    }, "kuch")
+
+    tl2.from(".page6_bot_cont p",{
+        transform:"scale(1.1) translateY(10vh)",
+        opacity:0
+    }, "kuch")
+
+
+    var tl3 = gsap.timeline({
+        scrollTrigger:{
+            trigger:"#page6>p",
+            scroller:"#main",
+            scrub:true,
+            start:"top 80%",
+            end:"top 50%",
+            // markers:true
+        }
+    })
+    tl3.from("#page6>p",{
+        transform:"scale(1.1) translateY(10vh)",
+        opacity:0
+    })
+
+    tl3.from("#page6>button",{
+        transform:"scale(1.1) translateY(10vh)",
+        opacity:0
+    })
+}
+page6TopAnime()
+
+function page7Anime(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page7_top",
+            scroller:"#main",
+            start:"top 90%",
+            // markers:true,
+            scrub:true,
+        }
+    })
+
+    tl.from(".page7_top h2",{
+        transform:"translate(2vh, 5vh) scale(1.1)",
+        opacity:0
+    },"page7topsimilar")
+
+    tl.from(".page7_top_right",{
+        transform:"translate(2vh, 5vh) scale(1.1)",
+        opacity:0
+    },"page7topsimilar")
+
+    tl.from(".page7_top p",{
+        transform:"translate(2vh, 7vh) scale(1.2)",
+        opacity:0
+    })
+
+    tl.from(".page7_bot1>.page7_bot_info",{
+        transform:"translate(2vh, 7vh) scale(1.2)",
+        opacity:0
+    })
+
+    tl.from(".page7_bot2>.page7_bot_info",{
+        transform:"translate(2vh, 7vh) scale(1.2)",
+        opacity:0
+    })
+
+    tl.from("#page7 button",{
+        transform:"translate(0,10vh) scale(1.2)",
+        opacity:0
+    })
+
+}
+page7Anime()
+
+function page8BgAnime(){
+    document.querySelector('#page8').addEventListener("mousemove",function(e){
+       document.querySelector("#page8").style.background = `conic-gradient(at  ${e.x}px ${e.y}px , #FFC3BE 0deg, #CED2FB 39.19deg, #C5E3FF 95.62deg, #BEEFF8 150.61deg, #B7F9F0 208.13deg, #F7FFC7 253.13deg, #FFE7D2 300deg, #FFD6CE 328.25deg, #FFC3BE 360deg), conic-gradient(from 176.66deg at 46.1% 33.87%, #E7E2F0 0deg, #95BFE8 39.19deg, #A3DEFF 104.7deg, #77A8F4 150.61deg, #6C89F0 210.89deg, #DAD4D4 272.3deg, #FFBBB4 314.64deg, #EFD4DB 328.25deg, #E7E2F0 360deg)`
+    })
+}
+page8BgAnime()
