@@ -550,3 +550,174 @@ function page8BgAnime(){
     })
 }
 page8BgAnime()
+
+function page8TopAnime(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page8_top h2",
+            scroller:"#main",
+            scrub:true,
+            end:"top 20%"
+        }
+    })
+
+    tl.from(".page8_top h2",{
+        transform:"translate(0, 10vh) scale(1.1)",
+        opacity:0,
+    },"page8_top_same")
+
+    tl.from(".page8_top h3",{
+        transform:"translate(0,10vh) scale(1.1)",
+        opacity:0,
+    },"page8_top_same")
+
+    tl.from(".page8_top p",{
+        transform:"translate(0,10vh) scale(1.1)",
+        opacity:0,
+        delay:.3
+    },"page8_top_same")
+}
+
+page8TopAnime()
+
+function page8CenterAnime(){
+    var tl= gsap.timeline({
+        scrollTrigger:{
+            trigger:".icons_contain1",
+            scroller:"#main",
+            scrub:true,
+            start:"top 90%"
+        }
+    })
+
+    tl.from(".icons_contain1",{
+        transform:"translate(-5vh,10vh) scale(1.1)",
+        opacity:0
+    })
+
+    tl.from(".icons_contain2",{
+        transform:"translate(-5vh,10vh) scale(1.1)",
+        opacity:0
+    })
+
+    tl.from(".icons_contain3",{
+        transform:"translate(-5vh,10vh) scale(1.1)",
+        opacity:0
+    })
+
+    tl.from(".icons_contain4",{
+        transform:"translate(-5vh,10vh) scale(1.1)",
+        opacity:0
+    })
+
+    tl.from(".icons_contain5",{
+        transform:"translate(-5vh,10vh) scale(1.1)",
+        opacity:0
+    })
+}
+page8CenterAnime()
+
+function page8BotLeft(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page8_bot h2",
+            scroller:"#main",
+            scrub:true,
+            end:"top 0%",
+            start:"top 90%"
+        }
+    })
+
+    tl.from(".page8_bot h2",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    },"page8_bot_same")
+    tl.from(".page8_bot p",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    })
+    tl.from(".page8_bot h4",{
+        transform:"translate(2vh,5vh) scale(1.1)",
+        opacity:0,
+    })
+    tl.from(".page8_bot_right",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    },"page8_bot_same")
+}
+page8BotLeft()
+
+function page9(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page9_cont",
+            scroller:"#main",
+            scrub:true,
+            end:"top 0%",
+            start:"top 90%"
+        }
+    })
+
+    tl.from(".page9_cont h2",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    },"page9_same")
+    tl.from(".page9_cont p",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    })
+    tl.from(".page9_cont h5",{
+        transform:"translate(2vh,5vh) scale(1.1)",
+        opacity:0,
+    })
+    tl.from(".page9_right",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    },"page9_same")
+}
+page9()
+
+function page10(){
+    var tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".page10_images",
+            scroller:"#main",
+            scrub:true,
+            end:"top 0%",
+            start:"top 90%"
+        }
+    })
+
+    tl.from(".page10_images",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    })
+    tl.from("#page10 p",{
+        transform:"translate(2vh,10vh) scale(1.1)",
+        opacity:0
+    })
+    tl.from("#page10 button",{
+        transform:"translate(2vh,5vh) scale(1.1)",
+        opacity:0,
+    })
+   
+}
+page10()
+
+function page11(){
+    gsap.from(".page11_left",{
+        transform:"translate(0,10vh) scale(1.2)",
+        opacity:0,
+        scrollTrigger:{
+            trigger:".page11_left",
+            scroller:"#main",
+            scrub:true,
+            end:"top 0%",
+            start:"top 90%"
+        }
+    })
+
+   
+   
+}
+page11()
